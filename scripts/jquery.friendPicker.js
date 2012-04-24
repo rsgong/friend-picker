@@ -1,9 +1,12 @@
 /*
- *
- * JQuery FriendPicker
- * A Jquery plugin to display a searchable, selectable list of Facebook friends
- * Sam Gong, Feb 2012
- * 
+ 
+	JQuery FriendPicker
+	A Jquery plugin to display a searchable, selectable list of Facebook friends
+	Sam Gong, Feb 2012
+	http://dextropy.com
+  
+	Provided as-is, free to copy, use, and change for any purpose.
+    
  */
 
 
