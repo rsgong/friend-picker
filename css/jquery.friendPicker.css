@@ -1,0 +1,64 @@
+.friendPicker_friendContainer{
+	position:relative;
+	height: 400px;
+	overflow-y: auto;
+	border: 1px solid #CCC;
+	width:100%;
+}
+
+
+.friendPicker_friendOption{
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1NTRDNEMwMjUxN0MxMUUxODRFNUQ4MkY0OTAzRDkxMSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1NTRDNEMwMzUxN0MxMUUxODRFNUQ4MkY0OTAzRDkxMSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjVGQThEMjc1NTBGMzExRTE4NEU1RDgyRjQ5MDNEOTExIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjVGQThEMjc2NTBGMzExRTE4NEU1RDgyRjQ5MDNEOTExIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+99KQVQAAADxQTFRFxcXF6urqwsLCnJyco6Ojz8/Pn5+f8/Pz09PT6Ojo3Nzc6enp2dnZ5ubm1tbW4+Pj4ODg7e3tmZmZ////Ir0GaQAAABR0Uk5T/////////////////////////wBPT+cRAAAATklEQVR42mTPSQ6AMAwEQWfB7ATs//8VjxRFg6hbH1v8S1xt0Gitae5SVRdbiUU/BL0T9EnQjaBvgt4I+iDoi6BlGSRaS566XPT38wowALkDC7Q2AFV+AAAAAElFTkSuQmCC');
+	background-repeat: no-repeat;
+	background-position: 2px center;
+
+	cursor: pointer;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.friendPicker_friendOption.cols2{
+	display:inline-block;
+	*display:inline;zoom:1;
+	width:50%;
+}
+.friendPicker_friendOption.cols3{
+	display:inline-block;
+	*display:inline;zoom:1;
+	width:33%;
+}
+.friendPicker_friendOption.cols4{
+	display:inline-block;
+	*display:inline;zoom:1;
+	width:25%;
+}
+
+.friendPicker_friendOption.checked{
+	background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1NTRDNEMwNjUxN0MxMUUxODRFNUQ4MkY0OTAzRDkxMSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1NTRDNEMwNzUxN0MxMUUxODRFNUQ4MkY0OTAzRDkxMSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjU1NEM0QzA0NTE3QzExRTE4NEU1RDgyRjQ5MDNEOTExIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU1NEM0QzA1NTE3QzExRTE4NEU1RDgyRjQ5MDNEOTExIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+ZJedywAAAKVQTFRF5ubm4+PjnJycj4+PxcXFwsLCcXFxCQkJExMT6Ojozs7OSEhIZGRkKysr1dXVwMDA39/fXV1dZWVlUFBQlZWVNzc3Hx8fHBwctra2bGxsT09PuLi4iYmJR0dHh4eHo6OjDg4OWFhYdHR02trav7+/6urqu7u7aWlp6enp4ODgDQ0N3Nzcn5+fz8/P2dnZ8/Pz8PDw7e3t1tbW09PTAAAAmZmZ////wKItgAAAADd0Uk5T////////////////////////////////////////////////////////////////////////ABBZnYsAAACMSURBVHjaTM9HFsIwDEVR2UnovffQiQv92/tfGhbHcHIn0tNM5EuOmJC37iepYUE2P92jJqo9cvVHtAEuntwz6m6xc6GLAfZF0Mb0wE1rICFqAWfiFh0NvZRARQhupWbhoDFWSnEbY1YAdCMs3LdgDox4cr/YsP8d3On7Lw1tZXaNMml9+R9nvf8IMABV9CUMzR4g6gAAAABJRU5ErkJggg==');
+	background-repeat: no-repeat;
+}
+
+.friendPicker_friendOption:hover{
+	background-color: #FFD;
+}
+
+.friendPicker_friendPhoto{
+	vertical-align:middle;
+	/* Add margin for the checkbox background */
+	margin: 4px 4px 4px 20px;
+	background-color: #CCC;
+}
+
+.friendPicker_searchBox{
+	width:100%;
+	font-size:14px;
+	padding:4px 1px;
+	border: 1px solid #333;
+	border-bottom:none;
+}
